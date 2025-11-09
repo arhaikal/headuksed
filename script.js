@@ -190,7 +190,7 @@ const translations = {
   }
 };
 
-let currentLanguage = 'en';
+let currentLanguage = 'et';
 
 // Smooth scroll functionality
 function scrollToSection(sectionId) {
@@ -384,7 +384,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (savedLanguage && translations[savedLanguage]) {
     setLanguage(savedLanguage);
   } else {
-    setLanguage('en');
+    setLanguage('et');
   }
 });
 
