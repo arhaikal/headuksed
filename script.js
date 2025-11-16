@@ -285,15 +285,15 @@ function initScrollTriggers() {
 }
 
 function initLanguageSwitcher() {
-  const buttons = document.querySelectorAll('.language-btn');
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      const lang = button.dataset.lang;
+  const languageSelect = document.querySelector('.language-select');
+  if (languageSelect) {
+    languageSelect.addEventListener('change', (event) => {
+      const lang = event.target.value;
       if (lang !== currentLanguage) {
         setLanguage(lang);
       }
     });
-  });
+  }
 }
 
 function applyTranslations(lang) {
@@ -341,9 +341,10 @@ function setLanguage(lang) {
 }
 
 function updateLanguageButtons(lang) {
-  document.querySelectorAll('.language-btn').forEach(button => {
-    button.classList.toggle('active', button.dataset.lang === lang);
-  });
+  const languageSelect = document.querySelector('.language-select');
+  if (languageSelect) {
+    languageSelect.value = lang;
+  }
 }
 
 function updateYear() {
