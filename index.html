@@ -253,8 +253,13 @@
         <h2 data-i18n="gallery.title">Our Work</h2>
         <p data-i18n="gallery.subtitle">A showcase of our master craftsmanship and attention to detail</p>
       </div>
-      
-      <div class="gallery-grid">
+
+      <div class="gallery-wrapper">
+        <button class="gallery-nav gallery-nav-left" aria-label="Scroll left">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+
+        <div class="gallery-grid">
         <div class="gallery-item">
           <img src="Uks-valjas-1.jpg" alt="Exterior Door 1">
           <div class="gallery-overlay">
@@ -334,6 +339,11 @@
             </div>
           </div>
         </div>
+        </div>
+
+        <button class="gallery-nav gallery-nav-right" aria-label="Scroll right">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
       </div>
     </div>
   </section>
@@ -393,6 +403,32 @@
         </div>
 
         <div class="contact-grid">
+          <form id="contact-form" class="form" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Web3Forms Configuration -->
+            <input type="hidden" name="access_key" value="294b1534-c592-4842-9064-4eee70645a33">
+            <input type="hidden" name="subject" value="New Quote Request from Head Uksed Website">
+            <input type="hidden" name="from_name" value="Head Uksed Website">
+            <input type="hidden" name="redirect" value="https://headuksed.ee/?success=true">
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+            <div class="form-group">
+              <input type="text" id="name" name="name" class="form-input" placeholder="Your Name *" required data-i18n-placeholder="form.name">
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="email" name="email" class="form-input" placeholder="Your Email *" required data-i18n-placeholder="form.email">
+            </div>
+
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="Your Phone Number" data-i18n-placeholder="form.phone">
+            </div>
+
+            <div class="form-group">
+              <textarea id="message" name="message" class="form-textarea" placeholder="Tell us about your project *" required data-i18n-placeholder="form.message"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-hero btn-submit" data-i18n="form.submit">Request Free Quote</button>
+          </form>
           <div class="contact-info">
             <h3 data-i18n="contact.infoTitle">Contact Information</h3>
             <div class="contact-list">
@@ -428,33 +464,6 @@
               </ul>
             </div>
           </div>
-
-          <form id="contact-form" class="form" action="https://api.web3forms.com/submit" method="POST">
-            <!-- Web3Forms Configuration -->
-            <input type="hidden" name="access_key" value="294b1534-c592-4842-9064-4eee70645a33">
-            <input type="hidden" name="subject" value="New Quote Request from Head Uksed Website">
-            <input type="hidden" name="from_name" value="Head Uksed Website">
-            <input type="hidden" name="redirect" value="https://headuksed.ee/?success=true">
-            <input type="checkbox" name="botcheck" class="hidden" style="display:none">
-
-            <div class="form-group">
-              <input type="text" id="name" name="name" class="form-input" placeholder="Your Name *" required data-i18n-placeholder="form.name">
-            </div>
-
-            <div class="form-group">
-              <input type="email" id="email" name="email" class="form-input" placeholder="Your Email *" required data-i18n-placeholder="form.email">
-            </div>
-
-            <div class="form-group">
-              <input type="tel" id="phone" name="phone" class="form-input" placeholder="Your Phone Number" data-i18n-placeholder="form.phone">
-            </div>
-
-            <div class="form-group">
-              <textarea id="message" name="message" class="form-textarea" placeholder="Tell us about your project *" required data-i18n-placeholder="form.message"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-hero btn-submit" data-i18n="form.submit">Request Free Quote</button>
-          </form>
         </div>
       </div>
     </div>

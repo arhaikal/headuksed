@@ -5,8 +5,8 @@ const translations = {
     'meta.keywords': 'custom doors Tallinn, door restoration Estonia, door repair Tallinn, wooden doors Estonia, entrance doors Tallinn, interior doors, new home doors',
     'og.title': 'Head Uksed - Custom Doors & Restoration in Tallinn, Estonia',
     'og.description': 'Expert custom door manufacturing and restoration in Tallinn. 45 years of master craftsmanship by Valentine Vesman. Perfect for new homes and renovations.',
-    'hero.heading': 'Master Craftsmanship for Over <span class="gold-text">45 Years</span>',
-    'hero.description': 'Don\'t replace - Restore and Save! Led by Master Craftsman Valentine Vesman, we deliver quality that immediately increases your home\'s value.',
+    'hero.heading': 'Unique High-Quality Hand-Crafted <span class="gold-text">Doors, Stairs & Wooden Furniture</span>',
+    'hero.description': 'Master Craftsman Valentine Vesman with 45 years of experience creates bespoke wooden pieces that transform your home.',
     'hero.cta': 'Get a Free Quote',
     'services.title': 'Our Expertise',
     'services.subtitle': 'Premium craftsmanship services backed by 45 years of master-level experience',
@@ -87,8 +87,8 @@ const translations = {
     'meta.keywords': 'двери на заказ Таллинн, реставрация дверей Эстония, ремонт дверей Таллинн, деревянные двери, входные двери Таллинн, межкомнатные двери',
     'og.title': 'Head Uksed - Двери на заказ и реставрация в Таллинне, Эстония',
     'og.description': 'Профессиональное изготовление и реставрация дверей в Таллинне. 45 лет мастерства Валентина Весмана. Для новых домов и ремонта.',
-    'hero.heading': 'Мастерство уже более <span class="gold-text">45 лет</span>',
-    'hero.description': 'Не заменяйте - реставрируйте и экономьте! Под руководством мастера Валентина Весмана мы создаем качество, которое мгновенно повышает ценность вашего дома.',
+    'hero.heading': 'Уникальные качественные ручной работы <span class="gold-text">двери, лестницы и деревянная мебель</span>',
+    'hero.description': 'Мастер Валентин Весман с 45-летним опытом создает индивидуальные изделия из дерева, которые преображают ваш дом.',
     'hero.cta': 'Получить бесплатный расчет',
     'services.title': 'Наша экспертиза',
     'services.subtitle': 'Премиальные работы мастера с 45-летним опытом',
@@ -169,8 +169,8 @@ const translations = {
     'meta.keywords': 'eritellimusuksed Tallinn, uste restaureerimine Eesti, ukse remont Tallinn, puituksed Eesti, sissepääsuuksed Tallinn, siseuksed, uue maja uksed',
     'og.title': 'Head Uksed - Eritellimusuksed ja restaureerimine Tallinnas, Eesti',
     'og.description': 'Professionaalne uste valmistamine ja restaureerimine Tallinnas. 45 aastat meistritööd Valentine Vesman. Uutele kodudele ja renoveerimisele.',
-    'hero.heading': 'Meistritase juba üle <span class="gold-text">45 aasta</span>',
-    'hero.description': 'Ära vaheta - taasta ja säästa! Meistrimees Valentine Vesman tagab kvaliteedi, mis tõstab kohe sinu kodu väärtust.',
+    'hero.heading': 'Ainulaadsed kvaliteetsed käsitsi valmistatud <span class="gold-text">uksed, trepid ja puidust mööbel</span>',
+    'hero.description': 'Meistrimees Valentine Vesman 45-aastase kogemusega loob erilahenduslikud puidutooted, mis muudavad sinu kodu.',
     'hero.cta': 'Küsi tasuta pakkumist',
     'services.title': 'Meie oskused',
     'services.subtitle': '45-aastase kogemusega meistrite kõrgtasemel teenused',
@@ -506,6 +506,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initContactForm();
   initScrollTriggers();
   initLanguageSwitcher();
+  initGalleryNavigation();
 
   const savedLanguage = getSavedLanguage();
   console.log('Saved language:', savedLanguage);
@@ -518,6 +519,60 @@ document.addEventListener('DOMContentLoaded', function() {
 
   console.log('Initialization complete. Current language:', currentLanguage);
 });
+
+// Gallery navigation
+function initGalleryNavigation() {
+  const galleryGrid = document.querySelector('.gallery-grid');
+  const galleryWrapper = document.querySelector('.gallery-wrapper');
+  const navLeft = document.querySelector('.gallery-nav-left');
+  const navRight = document.querySelector('.gallery-nav-right');
+
+  if (!galleryGrid || !galleryWrapper || !navLeft || !navRight) return;
+
+  const scrollAmount = 420; // Width of one item (400px) + gap (20px)
+
+  navLeft.addEventListener('click', () => {
+    galleryGrid.scrollBy({
+      left: -scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+
+  navRight.addEventListener('click', () => {
+    galleryGrid.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+
+  // Update button visibility and gradients based on scroll position
+  function updateNavButtons() {
+    const isAtStart = galleryGrid.scrollLeft <= 10;
+    const isAtEnd = galleryGrid.scrollLeft >= galleryGrid.scrollWidth - galleryGrid.clientWidth - 10;
+
+    // Update navigation buttons
+    navLeft.style.opacity = isAtStart ? '0.3' : '1';
+    navLeft.style.pointerEvents = isAtStart ? 'none' : 'auto';
+    navRight.style.opacity = isAtEnd ? '0.3' : '1';
+    navRight.style.pointerEvents = isAtEnd ? 'none' : 'auto';
+
+    // Update gradient masks visibility via CSS class on wrapper
+    if (isAtStart) {
+      galleryWrapper.classList.add('at-start');
+    } else {
+      galleryWrapper.classList.remove('at-start');
+    }
+
+    if (isAtEnd) {
+      galleryWrapper.classList.add('at-end');
+    } else {
+      galleryWrapper.classList.remove('at-end');
+    }
+  }
+
+  galleryGrid.addEventListener('scroll', updateNavButtons);
+  updateNavButtons(); // Initial update
+}
 
 // SVG Icons as inline strings
 const icons = {
