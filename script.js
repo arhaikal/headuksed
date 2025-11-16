@@ -1,9 +1,12 @@
 const translations = {
   en: {
-    'meta.title': 'Head Uksed - Master Craftsmanship Since 1978 | Door & Furniture Restoration Estonia',
-    'meta.description': 'Expert restoration and custom doors, staircases, and furniture in Estonia. Led by Master Craftsman Valentine Vesman with 45 years of experience. Don\'t replace—Restore and Save!',
+    'meta.title': 'Head Uksed - Custom Doors Tallinn | Door Restoration Estonia',
+    'meta.description': 'Custom door manufacturing and restoration in Tallinn. Perfect for new homes and renovations. 45 years of master craftsmanship by Valentine Vesman. Free quotes!',
+    'meta.keywords': 'custom doors Tallinn, door restoration Estonia, door repair Tallinn, wooden doors Estonia, entrance doors Tallinn, interior doors, new home doors',
+    'og.title': 'Head Uksed - Custom Doors & Restoration in Tallinn, Estonia',
+    'og.description': 'Expert custom door manufacturing and restoration in Tallinn. 45 years of master craftsmanship by Valentine Vesman. Perfect for new homes and renovations.',
     'hero.heading': 'Master Craftsmanship for Over <span class="gold-text">45 Years</span>',
-    'hero.description': 'Don\'t replace—Restore and Save! Led by Master Craftsman Valentine Vesman, we deliver quality that immediately increases your home\'s value.',
+    'hero.description': 'Don\'t replace - Restore and Save! Led by Master Craftsman Valentine Vesman, we deliver quality that immediately increases your home\'s value.',
     'hero.cta': 'Get a Free Quote',
     'services.title': 'Our Expertise',
     'services.subtitle': 'Premium craftsmanship services backed by 45 years of master-level experience',
@@ -23,8 +26,24 @@ const translations = {
     'gallery.item2.desc': 'Expert restoration bringing antiques back to life',
     'gallery.item3.title': 'Door Restoration',
     'gallery.item3.desc': 'Premium finish on restored interior door',
+    'gallery.item4.title': 'Exterior Door',
+    'gallery.item4.desc': 'Professional exterior door craftsmanship',
+    'gallery.item5.title': 'Exterior Door',
+    'gallery.item5.desc': 'Expert exterior door installation',
+    'gallery.item6.title': 'Exterior Door',
+    'gallery.item6.desc': 'Quality exterior door work',
+    'gallery.item7.title': 'Exterior Door',
+    'gallery.item7.desc': 'Custom exterior door design',
+    'gallery.item8.title': 'Exterior Door',
+    'gallery.item8.desc': 'Premium exterior door craftsmanship',
+    'gallery.item9.title': 'Interior Door',
+    'gallery.item9.desc': 'Elegant interior door restoration',
+    'gallery.item10.title': 'Interior Door',
+    'gallery.item10.desc': 'Quality interior door work',
+    'gallery.item11.title': 'Interior Door',
+    'gallery.item11.desc': 'Professional interior door restoration',
     'about.title': 'About Head Uksed',
-    'about.paragraph1': 'For over four decades, Master Craftsman Valentine Vesman has been delivering exceptional restoration and custom craftsmanship services. Our philosophy is simple: <span class="about-highlight">Don\'t replace—Restore and Save!</span>',
+    'about.paragraph1': 'For over four decades, Master Craftsman Valentine Vesman has been delivering exceptional restoration and custom craftsmanship services. Our philosophy is simple: <span class="about-highlight">Don\'t replace - Restore and Save!</span>',
     'about.paragraph2': 'We specialize in breathing new life into doors, staircases, and furniture, combining traditional techniques with modern expertise to create work that stands the test of time and immediately increases your property value.',
     'features.item1.title': '45 Years Experience',
     'features.item1.desc': 'Led by Master Craftsman Valentine Vesman with unmatched expertise',
@@ -63,10 +82,13 @@ const translations = {
     'footer.signature': 'Master Craftsman Valentine Vesman - 45 Years of Excellence'
   },
   ru: {
-    'meta.title': 'Head Uksed - Мастерство с 1978 года | Реставрация дверей и мебели в Эстонии',
-    'meta.description': 'Профессиональная реставрация и изготовление дверей, лестниц и мебели в Эстонии. Мастер Валентин Весман с 45-летним опытом. Не заменяйте — реставрируйте и экономьте!',
+    'meta.title': 'Head Uksed - Двери на заказ Таллинн | Реставрация дверей Эстония',
+    'meta.description': 'Изготовление и реставрация дверей в Таллинне. Идеально для новых домов и ремонта. 45 лет мастерства Валентина Весмана. Бесплатные расчеты!',
+    'meta.keywords': 'двери на заказ Таллинн, реставрация дверей Эстония, ремонт дверей Таллинн, деревянные двери, входные двери Таллинн, межкомнатные двери',
+    'og.title': 'Head Uksed - Двери на заказ и реставрация в Таллинне, Эстония',
+    'og.description': 'Профессиональное изготовление и реставрация дверей в Таллинне. 45 лет мастерства Валентина Весмана. Для новых домов и ремонта.',
     'hero.heading': 'Мастерство уже более <span class="gold-text">45 лет</span>',
-    'hero.description': 'Не заменяйте — реставрируйте и экономьте! Под руководством мастера Валентина Весмана мы создаем качество, которое мгновенно повышает ценность вашего дома.',
+    'hero.description': 'Не заменяйте - реставрируйте и экономьте! Под руководством мастера Валентина Весмана мы создаем качество, которое мгновенно повышает ценность вашего дома.',
     'hero.cta': 'Получить бесплатный расчет',
     'services.title': 'Наша экспертиза',
     'services.subtitle': 'Премиальные работы мастера с 45-летним опытом',
@@ -86,8 +108,24 @@ const translations = {
     'gallery.item2.desc': 'Экспертное восстановление, возвращающее к жизни антиквариат',
     'gallery.item3.title': 'Реставрация двери',
     'gallery.item3.desc': 'Премиальная отделка восстановленной межкомнатной двери',
+    'gallery.item4.title': 'Входная дверь',
+    'gallery.item4.desc': 'Профессиональное изготовление входных дверей',
+    'gallery.item5.title': 'Входная дверь',
+    'gallery.item5.desc': 'Экспертная установка входных дверей',
+    'gallery.item6.title': 'Входная дверь',
+    'gallery.item6.desc': 'Качественная работа с входными дверями',
+    'gallery.item7.title': 'Входная дверь',
+    'gallery.item7.desc': 'Индивидуальный дизайн входных дверей',
+    'gallery.item8.title': 'Входная дверь',
+    'gallery.item8.desc': 'Премиальное качество входных дверей',
+    'gallery.item9.title': 'Межкомнатная дверь',
+    'gallery.item9.desc': 'Элегантная реставрация межкомнатных дверей',
+    'gallery.item10.title': 'Межкомнатная дверь',
+    'gallery.item10.desc': 'Качественная работа с межкомнатными дверями',
+    'gallery.item11.title': 'Межкомнатная дверь',
+    'gallery.item11.desc': 'Профессиональная реставрация межкомнатных дверей',
     'about.title': 'О компании Head Uksed',
-    'about.paragraph1': 'Уже более четырех десятилетий мастер Валентин Весман предоставляет исключительные услуги по реставрации и индивидуальному изготовлению. Наша философия проста: <span class="about-highlight">Не заменяйте — реставрируйте и экономьте!</span>',
+    'about.paragraph1': 'Уже более четырех десятилетий мастер Валентин Весман предоставляет исключительные услуги по реставрации и индивидуальному изготовлению. Наша философия проста: <span class="about-highlight">Не заменяйте - реставрируйте и экономьте!</span>',
     'about.paragraph2': 'Мы вдохнем новую жизнь в двери, лестницы и мебель, сочетая традиционные техники с современным подходом, чтобы работа служила долго и увеличивала стоимость вашей недвижимости.',
     'features.item1.title': '45 лет опыта',
     'features.item1.desc': 'Под руководством мастера Валентина Весмана с непревзойденной экспертизой',
@@ -123,13 +161,16 @@ const translations = {
     'footer.linkContact': 'Контакт',
     'footer.contactTitle': 'Свяжитесь с нами',
     'footer.rights': 'Head Uksed. Все права защищены.',
-    'footer.signature': 'Мастер Валентин Весман — 45 лет совершенства'
+    'footer.signature': 'Мастер Валентин Весман - 45 лет совершенства'
   },
   et: {
-    'meta.title': 'Head Uksed - Meistritööd alates 1978. aastast | Uste ja mööbli restaureerimine Eestis',
-    'meta.description': 'Ekspertrestaureerimine ning eritellimusuksed, trepid ja mööbel kogu Eestis. Meistrimees Valentine Vesman üle 45 aasta kogemust. Ära vaheta—taasta ja säästa!',
+    'meta.title': 'Head Uksed - Eritellimusuksed Tallinn | Uste restaureerimine Eesti',
+    'meta.description': 'Uste valmistamine ja restaureerimine Tallinnas. Ideaalne uutele kodudele ja renoveerimisele. 45 aastat meistritööd Valentine Vesman. Tasuta hinnapakkumised!',
+    'meta.keywords': 'eritellimusuksed Tallinn, uste restaureerimine Eesti, ukse remont Tallinn, puituksed Eesti, sissepääsuuksed Tallinn, siseuksed, uue maja uksed',
+    'og.title': 'Head Uksed - Eritellimusuksed ja restaureerimine Tallinnas, Eesti',
+    'og.description': 'Professionaalne uste valmistamine ja restaureerimine Tallinnas. 45 aastat meistritööd Valentine Vesman. Uutele kodudele ja renoveerimisele.',
     'hero.heading': 'Meistritase juba üle <span class="gold-text">45 aasta</span>',
-    'hero.description': 'Ära vaheta—taasta ja säästa! Meistrimees Valentine Vesman tagab kvaliteedi, mis tõstab kohe sinu kodu väärtust.',
+    'hero.description': 'Ära vaheta - taasta ja säästa! Meistrimees Valentine Vesman tagab kvaliteedi, mis tõstab kohe sinu kodu väärtust.',
     'hero.cta': 'Küsi tasuta pakkumist',
     'services.title': 'Meie oskused',
     'services.subtitle': '45-aastase kogemusega meistrite kõrgtasemel teenused',
@@ -149,8 +190,24 @@ const translations = {
     'gallery.item2.desc': 'Asjatundlik taastamine, mis äratab antiigi ellu',
     'gallery.item3.title': 'Uste restaureerimine',
     'gallery.item3.desc': 'Luksuslik viimistlus taastatud siseuksel',
+    'gallery.item4.title': 'Välisuks',
+    'gallery.item4.desc': 'Professionaalne välisuste valmistamine',
+    'gallery.item5.title': 'Välisuks',
+    'gallery.item5.desc': 'Ekspertne välisuste paigaldus',
+    'gallery.item6.title': 'Välisuks',
+    'gallery.item6.desc': 'Kvaliteetne välisuste töötlemine',
+    'gallery.item7.title': 'Välisuks',
+    'gallery.item7.desc': 'Erilahendusega välisuks',
+    'gallery.item8.title': 'Välisuks',
+    'gallery.item8.desc': 'Tipptasemel välisuste meisterdamine',
+    'gallery.item9.title': 'Siseuks',
+    'gallery.item9.desc': 'Elegantne siseuste restaureerimine',
+    'gallery.item10.title': 'Siseuks',
+    'gallery.item10.desc': 'Kvaliteetne siseuste töötlemine',
+    'gallery.item11.title': 'Siseuks',
+    'gallery.item11.desc': 'Professionaalne siseuste restaureerimine',
     'about.title': 'Head Uksedist',
-    'about.paragraph1': 'Juba üle nelja aastakümne on meistrimees Valentine Vesman pakkunud tipptasemel restaureerimis- ja eritöid. Meie põhimõte on lihtne: <span class="about-highlight">Ära vaheta—taasta ja säästa!</span>',
+    'about.paragraph1': 'Juba üle nelja aastakümne on meistrimees Valentine Vesman pakkunud tipptasemel restaureerimis- ja eritöid. Meie põhimõte on lihtne: <span class="about-highlight">Ära vaheta - taasta ja säästa!</span>',
     'about.paragraph2': 'Anname uue elu ustele, treppidele ja mööblile, ühendades traditsioonilised võtted kaasaegse oskusteabega, et töö kestaks ja kasvataks sinu vara väärtust.',
     'features.item1.title': '45 aastat kogemust',
     'features.item1.desc': 'Meistrimees Valentine Vesman juhib töid võrreldamatu kogemusega',
@@ -227,7 +284,7 @@ function initContactForm() {
   const form = document.getElementById('contact-form');
   if (!form) return;
 
-  form.addEventListener('submit', function(e) {
+  form.addEventListener('submit', async function(e) {
     e.preventDefault();
 
     const formData = {
@@ -237,6 +294,7 @@ function initContactForm() {
       message: document.getElementById('message').value.trim()
     };
 
+    // Client-side validation
     if (!formData.name || !formData.email || !formData.message) {
       showToast(
         getTranslation('form.errorTitle'),
@@ -256,21 +314,46 @@ function initContactForm() {
       return;
     }
 
+    // Show sending state
     const submitBtn = form.querySelector('.btn-submit');
     const originalText = submitBtn.textContent;
     submitBtn.disabled = true;
     submitBtn.textContent = getTranslation('form.sending');
 
-    setTimeout(() => {
+    // Submit to Web3Forms
+    try {
+      const formDataObj = new FormData(form);
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formDataObj
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        showToast(
+          getTranslation('form.successTitle'),
+          getTranslation('form.successDescription'),
+          'success'
+        );
+        form.reset();
+      } else {
+        showToast(
+          getTranslation('form.errorTitle'),
+          'Something went wrong. Please try again or contact us directly.',
+          'error'
+        );
+      }
+    } catch (error) {
       showToast(
-        getTranslation('form.successTitle'),
-        getTranslation('form.successDescription'),
-        'success'
+        getTranslation('form.errorTitle'),
+        'Failed to send message. Please try again or contact us directly.',
+        'error'
       );
-      form.reset();
+    } finally {
       submitBtn.disabled = false;
       submitBtn.textContent = originalText;
-    }, 1000);
+    }
   });
 }
 
@@ -293,6 +376,9 @@ function initLanguageSwitcher() {
         setLanguage(lang);
       }
     });
+
+    // Set initial value
+    languageSelect.value = currentLanguage;
   }
 }
 
@@ -327,11 +413,48 @@ function applyTranslations(lang) {
     }
   });
 
+  // Update page title
   document.title = dictionary['meta.title'] || document.title;
+
+  // Update meta description
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc && dictionary['meta.description']) {
+    metaDesc.setAttribute('content', dictionary['meta.description']);
+  }
+
+  // Update meta keywords
+  const metaKeywords = document.querySelector('meta[name="keywords"]');
+  if (metaKeywords && dictionary['meta.keywords']) {
+    metaKeywords.setAttribute('content', dictionary['meta.keywords']);
+  }
+
+  // Update Open Graph tags
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  if (ogTitle && dictionary['og.title']) {
+    ogTitle.setAttribute('content', dictionary['og.title']);
+  }
+
+  const ogDesc = document.querySelector('meta[property="og:description"]');
+  if (ogDesc && dictionary['og.description']) {
+    ogDesc.setAttribute('content', dictionary['og.description']);
+  }
+
+  // Update Twitter card tags
+  const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+  if (twitterTitle && dictionary['og.title']) {
+    twitterTitle.setAttribute('content', dictionary['og.title']);
+  }
+
+  const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+  if (twitterDesc && dictionary['og.description']) {
+    twitterDesc.setAttribute('content', dictionary['og.description']);
+  }
 }
 
 function setLanguage(lang) {
-  if (!translations[lang]) return;
+  if (!translations[lang]) {
+    return;
+  }
   currentLanguage = lang;
   document.documentElement.lang = lang;
   applyTranslations(lang);
@@ -377,16 +500,23 @@ function getTranslation(key, lang = currentLanguage) {
 
 // Initialize all functionality when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM Content Loaded');
+  console.log('Current language:', currentLanguage);
+
   initContactForm();
   initScrollTriggers();
   initLanguageSwitcher();
 
   const savedLanguage = getSavedLanguage();
+  console.log('Saved language:', savedLanguage);
+
   if (savedLanguage && translations[savedLanguage]) {
     setLanguage(savedLanguage);
   } else {
     setLanguage('et');
   }
+
+  console.log('Initialization complete. Current language:', currentLanguage);
 });
 
 // SVG Icons as inline strings
